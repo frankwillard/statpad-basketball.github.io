@@ -2,7 +2,8 @@
     position: absolute;
     width: 225px;
     height: 284px;
-    left: 110px;
+    left: 4%;
+    margin-left: 50px;
     top: 724px;
 }
 
@@ -10,26 +11,34 @@
     position: absolute;
     width: 213px;
     height: 175px;
-    left: 1113px;
+    left: 75.1%;
     top: 797px;
 }
 
 .lebronTextBubble {
     position: absolute;
-    width: 391px;
-    height: 112px;
-    left: -10px;
+    width: 300px;
     top: 1008px;
+    left: 4%;
 
     background: #F2F0F0;
     border-radius: 16px;
 }
 
+
+@media (max-width: 1390px) {
+    .lebronTextBubble {
+      left: 0%;
+    }
+    .lebronPanel {
+        left: 0%;
+      }
+}
+
 .russellTextBubble {
     position: absolute;
-    width: 407px;
     height: 126px;
-    left: 1066px;
+    left: 69%;
     top: 967px;
 
     background: #F2F0F0;
@@ -40,7 +49,7 @@
     position: absolute;
     width: 448px;
     height: 256px;
-    left: 105px;
+    left: 8%;
     top: 105px;
 }
 
@@ -48,18 +57,20 @@
     position: absolute;
     width: 820px;
     height: 113px;
-    left: 544px;
+    left: 45%;
     top: 207px;
-
-
-    text-align: right;
-
     color: #E89E10;
+}
+
+@media (max-width: 1200px) {
+    .hofText {
+      left: 16%; /* Remove the min-width property */
+    }
 }
 
 .questionText {
     position: absolute;
-    width: 1317px;
+    width: 86%;
     height: 48px;
     left: 62px;
     top: 396px;
@@ -79,9 +90,9 @@
 
 .descriptionText {
     position: absolute;
-    width: 1309px;
+    width: 93%;
     height: 165px;
-    left: 70px;
+    left: 4.9%;
     top: 508px;
 
     /*font-family: 'Open Sans';*/
@@ -94,13 +105,42 @@
     color: #000000;
 }
 
+.tabList {
+    position: "absolute";
+    top: 648px;
+}
+
+@media (max-width: 963px) {
+
+    .descriptionText {
+      top: 558px; /* Remove the min-width property */
+    }
+
+    .tabList {
+        top: 668px;
+    }
+}
+
+@media (max-width: 628px) {
+
+    .tabList {
+        top: 718px;
+    }
+}
+
 .rankingsTable {
     position: relative;
     width: 30%;
-    height: 1500px; /* Adjust the height as needed */
-    right: 75px;
+    height: 1650px; /* Adjust the height as needed */
     margin-top: 600px; /* Adjust the top margin as needed */
+    min-width: 500px; /* Set a minimum width for the table */
   }
+
+@media (max-width: 600px) {
+    .rankingsTable {
+      min-width: 400px; /* Remove the min-width property */
+    }
+}
 
 .probsText {
     position: absolute;
@@ -128,8 +168,26 @@
     border-radius: 16px;
 }
   
-  
-  
-  
-  
-  
+.widerTable {
+    width: 60%;
+  }
+
+.d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+  }
+
+.chart {
+    right: 200px;
+    width: 900px;
+    height: 500px;
+  }
+
+  .playerNameColumn {
+    width: 8rem; /* Adjust the width as needed */
+    overflow-wrap: break-word; /* Allow word wrapping */
+  }
